@@ -22,7 +22,7 @@ inline ssize_t PUT(int fd, char c) {
 }
 
 inline ssize_t GET(int fd) {
-  char b; int r;
+  unsigned char b; int r;
   r = read(fd, &b, 1);
   if (r < 0)
     return r;
